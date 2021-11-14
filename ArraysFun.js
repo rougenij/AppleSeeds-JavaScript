@@ -14,16 +14,16 @@
 
 let funArr = Array(100).fill(1, 0);
 
-let funArr2 = Array.from({length: 100}, (_,index) => index + 1)
+let funArr2 = Array.from({ length: 100 }, (_, index) => index + 1);
 
 let obj = {
-    a: "School",
-    b: "Boy",
-    c: "Love",
+  a: "School",
+  b: "Boy",
+  c: "Love",
 };
 let funArr3 = Object.values(obj);
 
-Array.isArray(funArr); 
+Array.isArray(funArr);
 // Like why is this needed? xD
 
 const funArr4 = [1, 2];
