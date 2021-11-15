@@ -1,5 +1,5 @@
 function steps(num) {
-  for (let i = 1; i <= num; i++) {
+  for (let i = 1; i <= num; i++) 
     let step = "";
     for (let j = 1; j <= i; j++) {
       step += "#";
@@ -9,6 +9,5 @@ function steps(num) {
     }
     console.log(`'${step}'`);
   }
-}
 
 steps(5);

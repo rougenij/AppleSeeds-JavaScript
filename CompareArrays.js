@@ -8,5 +8,7 @@ function compareArray(food, food2) {
       if (food[i] == food2[j]) arr.push(food[i]);
     }
   }
-  console.log(arr);
+  return arr.length ? arr : false;
 }
+
+console.log(compareArray(food, food1));
