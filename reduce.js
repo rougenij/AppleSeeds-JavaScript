@@ -1,4 +1,4 @@
-const nums = [2, 4, 6, 7, 5, 9];
+const nums = [1, 2, 3, 5, 5, 9];
 
 const avg = nums.reduce((a, b) => a + b) / nums.length;
 console.log(avg);
