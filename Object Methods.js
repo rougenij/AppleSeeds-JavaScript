@@ -13,22 +13,18 @@
 // 'isIsland' will be true if there are no neighbouring countries, and
 // false if there are. Use the ternary operator to set the property.
 
-
 const myCountry = {
-    country : 'Israel',
-    captial : 'Jerusalem',
-    language : 'Hebrew',
-    population : 70000000,
-    neighbours : [
-        'Jordan' , 'Egypt' , 'Lebanon' , 'Syria'
-    ] ,
-    describe :function(){
-        return `${this.country} has ${this.population}, their mother tongue is ${this.language} and they ${this.neighbours.length} neighbors and they ${this.neighbours}`
-    } ,
-    checkIsland : function() {
-    this.isIsLand = this.neighbours.length ?false:true;
-    }
-
-}
-console.log(myCountry.checkIsland)
-console.log(myCountry)
+  country: "Israel",
+  captial: "Jerusalem",
+  language: "Hebrew",
+  population: 70000000,
+  neighbours: ["Jordan", "Egypt", "Lebanon", "Syria"],
+  describe: function () {
+    return `${this.country} has ${this.population}, their mother tongue is ${this.language} and they ${this.neighbours.length} neighbors and they ${this.neighbours}`;
+  },
+  checkIsland: function () {
+    this.isIsLand = this.neighbours.length ? false : true;
+  },
+};
+console.log(myCountry.checkIsland);
+console.log(myCountry);
