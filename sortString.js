@@ -13,15 +13,15 @@ const foodsWithUpperCase = [
 ];
 
 const foodSort = foodsWithUpperCase.slice().sort(function (a, b) {
-  a.toLocaleLowerCase;
-  b.toLocaleLowerCase;
+  a.toLowerCase;
+  b.toLowerCase;
 });
 console.log(foodSort);
 const foodSort2 = foodsWithUpperCase
   .slice()
   .sort(function (a, b) {
-    a.toLocaleLowerCase;
-    b.toLocaleLowerCase;
+    a.toLowerCase;
+    b.toLowerCase;
   })
   .reverse();
 console.log(foodSort2);
