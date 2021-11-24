@@ -28,3 +28,20 @@ for (i = 0; i < 3; i++) {
   };
   setTimeout(log, 100); // When the i leaves the for, Its value is 3, so when it goes to setTimeout, the log[i] = log[3], so it prints 3 three times cuz the for is for 3.
 }
+
+
+
+const secureBooking = function () {
+  let passengerCount = 0;
+​
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  }
+}
+//booker function is in the global scope
+const booker = secureBooking();
+booker();
+booker();
+booker();
+​

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" / >
+    <meta
+      name="viewport"
+      content="width=device-width,
+initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Header</h1>
+    <p>Paragraph</p>
+    <a href="#">link</a>
+    <img src="" alt="" />
+    <div class="x">Div with a class</div>
+    <div id="y">Div with an id</div>
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+  </body>
+  <script>
+    //   Selecint all elements and storing them inside a varialbe
+    const a = document.getElementsByTagName("h1");
+    const b = document.getElementsByTagName("p");
+    const c = document.getElementsByTagName("a");
+    const d = document.getElementsByClassName("x");
+    const e = document.getElementById("y");
+    const f = document.getElementsByTagName("input");
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(d);
+    console.log(e);
+    console.log(f);
+    // Selecting all not using querySelector
+    const g = document.body.children;
+    console.log(g);
+    // Using querySelector
+    const h = document.querySelectorAll("h1");
+    const i = document.querySelectorAll("p");
+    const j = document.querySelectorAll("a");
+    const k = document.querySelectorAll("img");
+    const l = document.querySelectorAll("div");
+    const m = document.querySelectorAll("input");
+    console.log(h);
+    console.log(i);
+    console.log(j);
+    console.log(k);
+    console.log(l);
+    console.log(m);
+    // Selecting all inputs with Foreach
+    let x = document.querySelectorAll("input");
+    // x.forEach((element) => {
+    //   console.log(element);
+    // });
+    console.log(x);
+
+    const p = [...f];
+    p.forEach((el) => {
+      console.log(el);
+    });
+  </script>
+</html>
