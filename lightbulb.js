@@ -1,5 +1,5 @@
-const img = document.querySelector("img");
+const imgEl = document.querySelector("img");
 
-img.addEventListener("click", () => {
-  img.classList.toggle("on");
+imgEl.addEventListener("click", () => {
+  imgEl.classList.toggle("on");
 });
