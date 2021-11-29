@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    setInterval(() => {
+      console.clear();
+      let dateTime = new Date();
+      let formatTime = [
+        dateTime.getHours(),
+        dateTime.getMinutes(),
+        dateTime.getSeconds(),
+      ]
+        .map((val) => val.toString().padStart(2, "0"))
+        .join(":");
+      console.log(formatTime);
+    }, 1000);
+  </script>
+</html>
