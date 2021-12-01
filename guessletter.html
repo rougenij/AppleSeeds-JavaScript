@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Letter</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0.5rem;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: royalblue;
+      padding: 20rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+    }
+
+    button {
+      padding: 1rem 2rem;
+    }
+
+    .letter {
+      border: 1px solid red;
+      padding: 1rem;
+    }
+
+    .message {
+      color: red;
+    }
+
+    .wrong-guesses__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  </style>
+
+  <body>
+    <h1>Guess the letter</h1>
+    <div class="letter">?</div>
+    <p class="message"></p>
+    <div class="wrong-guesses__container">
+      <h3 class="wrong-guesses__title">Wrong Guesses</h3>
+      <p class="wrong-guesses"></p>
+    </div>
+    <script src="/guessletter.js"></script>
+  </body>
+</html>
