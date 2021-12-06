@@ -9,6 +9,7 @@ const hero = {
 };
 function whoIsStronger(getStrength) {
   const myStrength = 82;
+  console.log(getStrength());
   if (getStrength() < myStrength) {
     return "I am stronger";
   } else return "You are stronger";
