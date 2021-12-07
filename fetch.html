@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Click for Joke</button>
+    <h1 data-joketitle></h1>
+    <h3 data-mainjoketitle></h3>
+    <p data-mainjoke></p>
+  </body>
+  <script>
+    const joketitleEl = document.querySelector("[data-joketitle]");
+    const jokeEl = document.querySelector("[data-mainjoke");
+    const mainTitleEl = document.querySelector("[data-mainjoketitle]");
+    const btnEl = document.querySelector("button");
+    const fetchingData = fetch("https://api.jokes.one/jod");
+    btnEl.addEventListener("click", () => {
+      fetchingData
+        .then((response) => response.json())
+        .then((data) => {
+          joketitleEl.textContent = `${data.contents.jokes[0].description}`;
+          mainTitleEl.textContent = `${data.contents.jokes[0].joke.title}`;
+          jokeEl.textContent = `${data.contents.jokes[0].joke.text}`;
+          console.log(data.contents.jokes[0]);
+          return data;
+        });
+    });
+  </script>
+</html>
